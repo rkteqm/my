@@ -43,9 +43,10 @@ class UsersTable extends Table
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 
-        $this->hasOne('Details', [
-            'foreignKey' => 'user_id',
-        ]);
+        $this->hasOne('Details');
+        // $this->hasOne('Details', [
+        //     'foreignKey' => 'user_id',
+        // ]);
     }
 
     /**

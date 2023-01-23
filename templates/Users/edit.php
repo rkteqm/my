@@ -26,7 +26,7 @@
                     echo $this->Form->control('email');
                     echo $this->Form->control('detail.city');
                     echo $this->Form->control('detail.phone');
-                    echo $this->Form->control('created_at');
+                    echo $this->Form->control('country.country');
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

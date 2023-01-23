@@ -6,16 +6,16 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * User Entity
+ * Country Entity
  *
  * @property int $id
- * @property string $name
- * @property string $email
+ * @property int $user_id
+ * @property string $country
  * @property \Cake\I18n\FrozenTime $created_at
  *
- * @property \App\Model\Entity\Detail[] $details
+ * @property \App\Model\Entity\User $user
  */
-class User extends Entity
+class Country extends Entity
 {
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -27,11 +27,9 @@ class User extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'name' => true,
-        'email' => true,
-        'detail' => true,
+        'user_id' => true,
         'country' => true,
         'created_at' => true,
-        'details' => true,
+        'user' => true,
     ];
 }

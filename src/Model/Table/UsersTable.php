@@ -44,6 +44,7 @@ class UsersTable extends Table
         $this->setPrimaryKey('id');
 
         $this->hasOne('Details');
+        $this->hasOne('Country');
         // $this->hasOne('Details', [
         //     'foreignKey' => 'user_id',
         // ]);
